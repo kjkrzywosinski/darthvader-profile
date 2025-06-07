@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darth Vader's Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Darth Vader's Profile</h1>
+    </header>
+
+    <main class="grid-container">
+        <section class="info">
+            <h2>About Me</h2>
+            <table>
+                <caption>Profile Information</caption>
+                <thead>
+                    <tr><th colspan="2">Basic Information</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Name:</td><td>Darth Vader</td></tr>
+                    <tr><td>Birthday:</td><td>April 19, 41 BBY</td></tr>
+                    <tr><td>Favorite Color:</td><td>Black</td></tr>
+                    <tr><td>Favorite Quote:</td><td>"The Force is strong with this one</td></tr>
+                    <tr><td>Favorite Food:</td><td>RepMed Vita paste</td></tr>
+                    <tr><td>Favorite Movie:</td><td>Star Wars - Episode IV - Return of the Jedi</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="darthvader.jpg" alt="Darth Vader Profile Image" width="200" height="300">
+            <iframe width="250" height="140" src="https://www.youtube.com/embed/PZC6KCAQUks" title="Darth Vader Hallway Scene" allowfullscreen></iframe>
+            <audio controls>
+                <source src="imperial-march-vader.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="form full-width">
+            <h2>Leave Feedback Here</h2>
+            <form>
+                <fieldset>
+                    <legend>Your Info</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rate This Profile</legend>
+                    <p>How would you rate the profile of this fictional character? (1 = Weak in the Force, 5 = Strong in the Force)</p>
+                    <div class="rating-grid">
+                        <label><input type="radio" name="rating" value="1"><span>1</span></label>
+                        <label><input type="radio" name="rating" value="2"><span>2</span></label>
+                        <label><input type="radio" name="rating" value="3"><span>3</span></label>
+                        <label><input type="radio" name="rating" value="4"><span>4</span></label>
+                        <label><input type="radio" name="rating" value="5"><span>5</span></label>
+                    </div>
+                </fieldset>
+
+                <label for="msg">Messages:</label>
+                <textarea id="msg"></textarea>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="mailing">
+                    <label for="mailing">Join Mailing List!</label>
+                </div>
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
